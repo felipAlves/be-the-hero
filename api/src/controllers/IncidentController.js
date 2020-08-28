@@ -9,7 +9,7 @@ module.exports = {
         const ong = await Ong.findById(ong_id)
 
         if(!ong) {
-            return res.status(400).send({ error: 'User does not exists' })
+            return res.status(400).send({ error: 'Ong does not exists' })
         }
 
         const incident = await Incident.create({ong_id  ,...data})
