@@ -16,7 +16,7 @@ module.exports = {
                 expiresIn: 86400
             })
 
-            return res.json({ ong, token })
+            return res.json({ token })
    
     },
 
